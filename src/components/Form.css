@@ -1,0 +1,17 @@
+.containerForm {
+	width: 30vw;
+}
+
+.containerButton {
+	display: flex;
+	justify-content: center;
+}
+
+.buttonRespuesta {
+	background-color: #370085;
+	color: rgb(204, 204, 204);
+}
+.buttonRespuesta:hover {
+	background-color: #4804a7;
+	color: yellow;
+}
