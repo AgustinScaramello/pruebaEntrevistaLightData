@@ -1,0 +1,67 @@
+.containerGeneral {
+	height: 75%;
+	width: 80%;
+	animation: fade 1s ease;
+}
+
+.title {
+	font-size: 2rem;
+}
+
+.label {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.containerButton {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.buttonRespuesta {
+	background-color: #370085;
+	color: rgb(204, 204, 204);
+	width: 70%;
+}
+.buttonRespuesta:hover {
+	background-color: #4804a7;
+	color: yellow;
+}
+
+.errors {
+	color: red;
+	font-size: small;
+	margin: 0;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.title {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 830px) {
+	.title {
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.containerGeneral {
+		height: 100%;
+		width: 100%;
+	}
+}

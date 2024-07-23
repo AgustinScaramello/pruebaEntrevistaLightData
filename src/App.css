@@ -5,9 +5,12 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: "Roboto", sans-serif;
 }
 
-.containerGeneral {
+.containerBody {
+	width: 50vw;
+	height: 80vh;
 	background-color: rgb(204, 204, 204);
 	color: #370085;
 	padding: 3rem;
@@ -15,4 +18,28 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	transition: transform 0.5s ease, box-shadow 0.9s ease;
+}
+
+.containerBody:hover {
+	box-shadow: 0px 0px 200px 20px #370085;
+	transform: scale(1.01);
+	-webkit-transform: scale(1.01);
+	-moz-transform: scale(1.01);
+}
+
+.continerLogo {
+	height: 25%;
+}
+
+.image {
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 700px) {
+	.containerBody {
+		height: 100%;
+		width: 100%;
+	}
 }

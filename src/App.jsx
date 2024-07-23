@@ -1,14 +1,18 @@
-import { Form } from "./components/Form"
+import { Form } from "./components/Form/Form"
 import Logo from "./assets/lightdata_violeta.png"
 
 import "./App.css"
+import { Route, Routes } from "react-router-dom"
 
 function App() {
 	return (
-		<div className="containerGeneral">
-			<img src={Logo} alt="LightData" className="mb-2" />
-			<h1 className="fs-2 mb-4">¿Cuantos años tenes?</h1>
-			<Form />
+		<div className="containerBody">
+			<div className="continerLogo">
+				<img src={Logo} alt="LightData" className="image" />
+			</div>
+			<Routes>
+				<Route path="/" element={<Form />} />
+			</Routes>
 		</div>
 	)
 }
